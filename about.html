@@ -1,0 +1,83 @@
+<!--ABOUT ME-->
+
+<!DOCTYPE html>     <!--tells that it is a html file-->
+<html lang="en">    <!--tell that the page is in English-->
+<!--header - metadata ans links-->
+<head>
+    <!--ensure special characters display correctly-->
+    <meta charset="UTF-8">
+    <!--makes the page responsive on mobile by setting the viewport width to device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!--description shown in search engine results-->
+    <meta name="description" content="About Me of Xaiver Leung - INFRI3120 student.">
+    <!--description shown in search engine results-->
+    <title>About Me | Xaiver Leung Portfolio</title>
+
+    <!--Same three viewport stylesheets as index.html-->
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet"
+          media="only screen and (min-width: 481px) and (max-width: 1023px)"
+          href="tablet.css">
+
+    <link rel="stylesheet"
+          media="only screen and (max-width: 480px)"
+          href="mobile.css">
+</head>
+
+<!--body - content that users sees in the browser window-->
+<body>
+<!--the outer container that centres all content-->
+<div id="wrapper">
+    <!--Same header as index.html-->
+    <header id="banner">
+        <h1>Xaiver Leung</h1>
+        
+        <nav class="main-nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About Me</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </nav>
+    </header>
+
+    <!--LEFT COLUMN — contains the profile photo-->
+    <div id="left-column">
+        <h2>About Me</h2>
+        <!--ipmort my profile image-->
+        <img src="profile.jpg" alt="Portrait photo of Xaiver Leung" width="220">
+    </div>
+
+    <!--wide main content area, float right in CSS -->
+    <div id="right-column">
+        <!--Something about me-->
+        <h2>Who I Am</h2>
+        <p>
+            I am a second-year student in Ontario Tech with a major of Networking. <br>
+            I am a Chinese from Hong Kong. <br>
+            Move to Canada since 2018. <br>
+            Some of my hobbies is play video games and listen to music.
+        </p>
+
+        <!--Import my introduction video-->
+        <h2>Short Introduction Video</h2>
+        <video controls poster="intro.jpg" width="560" height="315" preload="metadata">
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!--Clear floats so the footer appears below both columns-->
+    <div class="clear"></div>
+
+    <!--footer-->
+    <footer id="footer">
+        <address>
+            <p>Email: <a href="mailto:pakyiu.leung@ontariotechu.net">pakyiu.leung@ontariotechu.net</a></p>
+        </address>
+        <p>&copy; 2026 Xaiver Leung. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

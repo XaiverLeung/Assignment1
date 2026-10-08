@@ -1,0 +1,138 @@
+/*mobile.css*/
+
+/*ensure special characters display correctly*/
+@charset "UTF-8";
+
+/*only for mobile screen*/
+@media only screen and (max-width : 480px)
+{
+    /*body*/
+    body
+    {
+        color: black;               /*black text*/
+        font-family: Verdana, Geneva, Arial, sans-serif;    /*text font*/
+        padding: 0px;           /*remove default browser padding*/
+        margin: 0px;            /*remove default browser margin*/
+        background: linear-gradient(135deg, #D99437 0%, #23B7D9 100%);  /*background colour from light brown to lightblue*/
+    }
+
+
+    /*Global Heading*/
+    h1,h2,h3,h4,h5,h6,p,li
+    {
+        margin-left: 15px;          /*left indent of 15px*/
+        margin-top: 0px;            /*remove top margin*/
+        color: black;             /*black text for all headings and paragraphs */
+    }
+
+
+    /*Wrapper*/
+    #wrapper
+    {
+        width: 100%;            /*fill the full screen*/
+        height: auto;           /*height depends on the content*/
+    }
+
+
+    /*right column*/
+    #right-column
+    {
+        width: 100%;                    /*full width*/
+        float: none;                    /*remove float (column stacks)*/
+        height: auto;                   /*height depends on the content*/
+        min-height: 400px;              /*min height of 400px*/
+        background-color: cyan;       /*background colour*/
+        padding: 10px;                  /*inner space*/
+    }
+
+
+    /*left column*/
+    #left-column
+    {
+        float: none;                    /*remove float (column stacks)*/
+        width: 100%;                    /*full width*/
+        height: auto;                   /*height depends on the content*/
+        min-height: 150px;              /*min height of 150px*/
+        background-color: green;      /*background colour*/
+        padding: 10px;                  /*inner space*/
+    }
+
+
+    /*banner*/
+    #banner
+    {
+        height: auto;                   /*height depends on content*/
+        min-height: 100px;              /*min height of 100px*/
+        background-color: orange;     /*background colour*/
+    }
+
+    /*banner h1*/
+    #banner h1
+    {
+        color: white;           /*text colour*/
+        padding-top: 15px;        /*space above the title*/
+        margin: 0;                /*remove defult margin of h1*/
+    }
+
+    /*buttons*/
+    .button
+    {
+        font-size: x-large;             /*text size*/
+        text-decoration: none;          /*remove underline*/
+        background-color: #F2E2CE;    /*background colour*/
+        color: purple;                /*text colour*/
+        display: block;                 /*block shows as a button*/
+        width: 80%;                     /*phone width*/
+        float: none;                    /*remove float (column stacks)*/
+        padding: 5px;                   /*inner space*/
+        margin: 5px auto;               /*auto centre the button*/
+        border-radius: 5px;             /*round coners*/
+        box-shadow: 5px 5px 3px #1FA65A;        /*shawdow*/
+        text-align: center;             /*centre the text*/
+    }   
+
+    /*button hover*/
+    .button:hover
+    {
+        background-color: grey;         /*background colour*/
+        color: white;                   /*text colour*/
+        box-shadow: 5px 5px 3px grey;   /*shadow*/
+    }
+
+    /*image and video*/
+    img,
+    video
+    {
+        max-width: 95%;         /*never wider than the phone screen*/
+        height: auto;           /*keeps aspect ratio*/
+        display: block;         /*block for centring*/
+        margin: 10px auto;      /*auto centre horizontally*/
+    }
+
+
+    /*form fields expand to fill the screen width*/
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea
+    {
+        width: 95%; /*never wider than the phone screen*/
+    }
+
+
+    /*footer*/
+    #footer
+    {
+        height: auto;                       /*height depends on content*/
+        min-height: 80px;                   /*min height of 80px*/
+        background-color: greenyellow;    /*background colour*/
+        color: white;                     /*text colour*/
+        padding: 10px;                      /*inner space*/
+    }
+
+    /*text colour of links in footer*/
+    #footer a
+    {
+        color: blue;
+    }
+}

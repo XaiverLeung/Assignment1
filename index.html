@@ -1,0 +1,64 @@
+<!--HOME PAGE-->
+
+<!--use !<tab> to quickly setup-->
+<!DOCTYPE html>     <!--tells that it is a html file-->
+<html lang="en">    <!--tell that the page is in English-->
+<!--header - metadata ans links-->
+<head>
+    <!--ensure special characters display correctly-->
+    <meta charset="UTF-8">
+    <!--makes the page responsive on mobile by setting the viewport width to device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--description shown in search engine results-->
+    <meta name="description" content="Personal portfolio of Xaiver Leung - INFRI3120 student.">
+    <!--Title in the browser tab-->
+    <title>Home | Xaiver Leung Portfolio</title>
+
+    <!--laptop styles-->
+     <!--stylesheet is to tell browser it is a css file-->
+    <link rel="stylesheet" href="index.css">
+
+    <!--Tablet styles (Loads on 481 - 1023px wide)-->
+    <link rel="stylesheet"
+          media="only screen and (min-width: 481px) and (max-width: 1023px)"
+          href="tablet.css">
+
+    <!--mobile styles (Loads on <= 480 px wide)-->
+    <link rel="stylesheet"
+          media="only screen and (max-width: 480px)"
+          href="mobile.css">
+</head>
+
+
+<!--body - content that users sees in the browser window-->
+<body>
+
+<!--the outer container that centres all content-->
+<div id="wrapper">
+
+    <!--Site title and main nacigation-->
+    <header id="banner">
+        <h1>Xaiver Leung</h1>
+
+        <!-- <nav> navigations to others sites -->
+        <nav class="main-nav">
+            <!-- Each link uses the .button class for consistent styling -->
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About Me</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </nav>
+    </header>
+
+    <!--footer-->
+    <footer id="footer">
+        <address>
+            <p>Email: <a href="mailto:pakyiu.leung@ontariotechu.net">pakyiu.leung@ontariotechu.net</a></p>
+        </address>
+        <p>&copy; 2026 by Xaiver Leung. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

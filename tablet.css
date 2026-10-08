@@ -1,0 +1,123 @@
+/*tablet.css*/
+
+/*ensure special characters display correctly*/
+@charset "UTF-8";
+
+/*body*/
+body
+{
+    color: black;         /*black text*/
+    font-family: Verdana, Geneva, Arial, sans-serif;    /*text font*/
+    padding: 0px;           /*remove default browser padding*/
+    margin: 0px;            /*remove default browser margin*/
+}
+
+/*Global Heading*/
+h1,h2,h3,h4,h5,h6,p,li
+{
+    margin-left: 15px;          /*left indent of 15px*/
+    margin-top: 0px;            /*remove top margin*/
+    color: black;             /*black text for all headings and paragraphs */
+}
+
+/*warpper*/
+#wrapper
+{
+    width: 100%;                /*fill the full tablet width*/
+    height: auto;               /*height depends with the contect*/
+    min-height: 800px;          /*min height of 800px*/
+    background-color: white;  /*white background*/
+}
+
+/*right column*/
+#right-column
+{
+    float: none;                    /*remove float (column stacks)*/
+    width: 100%;                    /*full width*/
+    min-height: 400px;              /*min height 400px*/
+    background-color: cyan;       /*backgroung colour*/
+    padding: 10px;                  /*inner space*/
+}
+
+/*left column*/
+#left-column
+{
+    float: none;                    /*remove float (column stacks)*/
+    width: 100%;                    /*full width*/
+    min-height: 150px;              /*min height of 150px*/
+    background-color: green;      /*background colour*/
+    padding: 10px;                  /*inner space*/
+}
+
+
+/*banner*/
+#banner
+{
+    background-color: orange;       /*background colour*/
+    min-height: 150px;                /*min height of 150*/
+}
+
+/*banner h1*/
+#banner h1
+{
+    color: white;                   /*text colour*/
+    padding-top: 15px;                /*space above the title*/
+}
+
+
+/*styled navigation links*/
+.button
+{
+    font-size: large;                       /*font size*/
+    text-decoration: none;                  /*no underline links*/
+    background-color: #F2E2CE;            /*button background colour*/
+    color: purple;                        /*text colour*/
+    display: block;                         /*block shows as a button*/
+    width: 18%;                             /*button size*/
+    float: left;                            /*button side by side from left side*/
+    padding: 8px;                           /*inner space*/
+    margin: 15px;                           /*outer space*/
+    border-radius: 12px;                    /*round corners*/
+    box-shadow: 5px 5px 3px #1FA65A;      /*green shadow*/
+    text-align: center;                     /*centred text*/
+}
+
+/*button hover*/
+.button:hover
+{
+    background-color: grey;                 /*grey background after selected*/
+    color: white;                           /*white text after selected*/
+    box-shadow: -5px -5px 3px grey;         /*grey shadow after selected*/
+}
+
+
+/*image and videos*/
+img,
+video
+{
+    max-width: 100%;    /*never wider than its container*/
+    height: auto;       /*keeps aspect ratio*/
+}
+
+
+/*footer*/
+#footer
+{
+    min-height: 80px;                   /*min height 80px*/
+    background-color: greenyellow;    /*bbackground colour*/
+    color: white;                     /*text colour*/
+    padding: 10px;                      /*inner space*/
+}
+
+/*text colour of links in footer*/
+#footer a
+{
+    color: blue;                     
+}
+
+
+/*clear floated element*/
+.clear
+{
+    clear: both;
+}

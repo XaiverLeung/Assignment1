@@ -1,0 +1,206 @@
+/*index.css*/
+
+/*ensure special characters display correctly*/
+@charset "UTF-8";
+
+/*wrapper*/
+#wrapper
+{
+    width: 960px;                   /*fixed width of desktop*/
+    height: auto;                   /*height depends with the content*/
+    min-height: 800px;              /*at least with a height of 800*/
+    margin-right: auto;             /*centres the wrapper horizontally*/
+    margin-left: auto;              /*centres the wrapper horizontally*/
+    background-color: white;      /*white background*/
+    overflow: hidden;               /*clears floated children*/
+}
+
+
+/*right column*/
+#right-column
+{
+    float: right;                   /*column of the right side*/
+    width: 600px;                   /*main content area with 600px*/
+    min-height: 600px;              /*min height of 600px*/
+    background-color: white;      /*white background for readability*/
+    padding: 10px;                  /*inner space*/
+}
+
+/*left cloumn*/
+#left-column
+{
+    float: left;                    /*column on the left side*/
+    width: 320px;                   /*side panel with a width 320px*/
+    min-height: 2000px;             /*min height of 2000px, make sure it fits the height of right column*/
+    background-color:grey;        /*grey*/
+    padding: 10px;                  /*inner space*/
+}
+
+/*body*/
+body
+{
+    font-family: "JetBrains Mono", Verdana, Geneva, Arial, sans-serif;  /*text font*/
+    padding: 0px;           /*remove default browser padding*/
+    margin: 0px;            /*remove default browser margin*/
+    background: linear-gradient(135deg, #D99437 0%, #23B7D9 100%);  /*background colour from light brown to lightblue*/
+    min-height: 100vh;              /*makes gradient cover full viewport height*/
+    background-attachment: fixed;   /*gradient stays fixed while scrolling*/
+}
+
+
+/*Global Heading*/
+h1,h2,h3,h4,h5,h6,p,li
+{
+    padding: 10px;                  /*space inside each element*/
+    margin-left: 5px;               /*left indent of 5px*/
+    color: black;                 /*black text for all headings and paragraphs */
+}
+
+
+/*banner*/
+#banner
+{
+    background-color: purple;     /*background colour with purple*/
+    min-height: 120px;              /*space 120px above the title*/
+    padding: 10px;                  /*inner space*/
+}
+
+
+/*Banner h1*/
+#banner h1
+{
+    color: #F2E2CE;                /*text colour*/
+    padding-top: 15px;               /*space above the title*/
+    margin: 0;
+}
+
+
+/*styled navigation links*/
+.button
+{
+    font-size: large;               /*font size*/
+    text-decoration: none;          /*no underline under links*/
+    background-color: #F2E2CE;    /*button colour*/
+    color: purple;                /*text colour*/
+    display: block;                 /*block like a box*/
+    width: 20%;                     /*four buttons = 80%, and add the magins*/
+    float: left;                    /*sit side by side from left side*/
+    padding: 8px;                   /*inner space*/
+    margin: 5px;                    /*outer space*/
+    border-radius: 10px;            /*rounded corners*/
+    box-shadow: 5px 5px 3px #7b6de5;    /*box shadow with light purple*/
+    text-align: center;             /*centre the text*/
+}           
+
+
+/*hover*/
+.button:hover
+{
+    background-color: #4907b4;          /*blue background after selected*/
+    color:antiquewhite;                 /*text colour after selected*/
+    box-shadow: -5px -5px 3px #4907b4;  /*blue shawdow after selected*/
+}
+
+/*image*/
+img
+{
+    max-width: 100%;                /*never wider than its container*/
+    height: auto;                   /*keeps aspect ratio*/
+    border: 3px solid black;      /*black corder*/
+    border-radius: 10px;            /*rounded corners*/
+    margin: 10px;                   /*outer space*/
+}
+
+/*video*/
+video
+{
+    margin: 15px;                           /*outer space*/
+    padding: 5px;                           /*inner space*/
+    background-color: grey;               /*grey frame*/
+    border: 2px solid black;              /*black border*/
+    box-shadow: 10px 10px 5px grey;       /*3D shawdow of grey*/
+    max-width: 100%;                        /*responsive width*/
+    height: auto;                           /*keeps aspect ratio*/
+}
+
+/*form*/
+form
+{
+    padding: 15px;      /*inner spacing*/
+}
+
+
+/*text in the forms*/
+label
+{
+    display: block;                 /*each line of text on its own line*/
+    margin-top: 10px;               /*space above each label*/
+    color: black;                 /*black text*/
+    font-weight: bold;              /*bold text*/
+}
+
+
+/*Text input in the form and textareas share the same look*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea
+{
+    width: 95%;                         /*width of textbox*/
+    padding: 8px;                       /*inner space*/
+    margin-top: 4px;                    /*space above the input*/
+    border: 1px solid black;          /*black border*/ 
+    border-radius: 4px;                 /*rounded corners*/
+    font-size: 1rem;                    /*standard text size*/
+}
+
+
+/*shadow of textbox when user is typing*/
+input:focus,
+textarea:focus
+{
+    outline: 2px solid black;
+}
+
+/*sumbit button*/
+button
+{
+    margin: 15px;                           /*outer space*/
+    padding: 10px;                          /*inner space*/
+    background-color: green;              /*green background colour*/
+    color: white;                         /*white text*/
+    height: 40px;                           /*fixed height*/
+    border: 2px solid black;              /*black border*/
+    border-radius: 5px;                     /*rounded corners*/
+    cursor: pointer;                        /*shows a hand cursor on hover*/
+}
+
+
+/*sumbit button hover*/
+button:hover
+{
+    background-color: grey;          /*grey background colour after is selected*/
+    color: white;                    /*white text*/
+}
+
+
+/*footer*/
+#footer
+{
+    min-height: 80px;               /*min height*/
+    background-color: limegreen;  /*limegreen background colour*/
+    padding: 10px;                  /*inner space*/
+}           
+
+
+/*links in footer, text colour with blue*/
+#footer a
+{
+    color: blue;
+}
+
+/*clear floated element*/
+.clear
+{
+    clear: both;
+}

@@ -1,0 +1,88 @@
+<!--Projects page-->
+
+<!DOCTYPE html>     <!--tells that it is a html file-->
+<html lang="en">    <!--tell that the page is in English-->
+<!--header - metadata ans links-->
+<head>
+    <!--ensure special characters display correctly-->
+    <meta charset="UTF-8">
+    <!--makes the page responsive on mobile by setting the viewport width to device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--description shown in search engine results-->
+    <meta name="description" content="Projects of Xaiver Leung - INFRI3120 student.">
+    <!--description shown in search engine results-->
+    <title>Projects | Xaiver Leung Portfolio</title>
+
+    <!--Same three viewport stylesheets as index.html-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+          media="only screen and (min-width: 481px) and (max-width: 1023px)"
+          href="tablet.css">
+    <link rel="stylesheet"
+          media="only screen and (max-width: 480px)"
+          href="mobile.css">
+</head>
+
+<!--body - content that users sees in the browser window-->
+<body>
+<!--the outer container that centres all content-->
+<div id="wrapper">
+    <!--Same header as index.html-->
+    <header id="banner">
+        <h1>Xaiver Leung</h1>
+        <nav class="main-nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About Me</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </nav>
+    </header>
+
+    <!--LEFT COLUMN — show the title of the page-->
+    <div id="left-column">
+        <h2>Projects</h2>
+    </div>
+
+    <!-- RIGHT COLUMN — display the projects -->
+    <div id="right-column">
+        <!--display the title, image and description of the projects-->
+        <article>
+            <h3>1. Hangman Game</h3>
+             <img src="Hangman.png" alt="photo of the hangman game" width="220">
+             <p>This hangman game is the final project in Intro of Programming. It uses Python the code. </p>
+        </article>
+
+        <article>
+            <h3>2. Routing topology 1</h3>
+            <img src="Networking.png" alt="photo of the Routing topology 1" width="500">
+            <p>This is a final project in intro of networking I. it is a group work, use to work with group of 2. I goal is to make all the pings successful.</p>
+        </article>
+
+        <article>
+            <h3>3. Routing topology 2</h3>
+            <img src="Routing.png" alt="photo of the Routing topology 2" width="500">
+            <p>The goal is the same as the routing topology 1. This project also is a group work. It is from intro of neworking II.</p>
+        </article>
+
+        <article>
+            <h3>4. Library Management System</h3>
+            <img src="Obj.png" alt="photo of the Library Management System" width="220">
+            <p>This is the final project in Obj Oriented Programming. It uses pothon to code.</p>
+        </article>
+    </div>
+
+    <!--Clear floats so the footer appears below both columns-->
+    <div class="clear"></div>
+
+    <!--footer-->
+    <footer id="footer">
+        <address>
+            <p>Email: <a href="mailto:pakyiu.leung@ontariotechu.net">pakyiu.leung@ontariotechu.net</a></p>
+        </address>
+        <p>&copy; 2026 Xaiver Leung. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

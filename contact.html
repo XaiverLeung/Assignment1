@@ -1,0 +1,96 @@
+<!--CONTACT ME-->
+
+<!DOCTYPE html>     <!--tells that it is a html file-->
+<html lang="en">    <!--tell that the page is in English-->
+<!--header - metadata ans links-->
+<head>
+    <!--ensure special characters display correctly-->
+    <meta charset="UTF-8">
+    <!--makes the page responsive on mobile by setting the viewport width to device width-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--description shown in search engine results-->
+    <meta name="description" content="Contact Me of Xaiver Leung - INFRI3120 student.">
+    <!--description shown in search engine results-->
+    <title>Contact Me | Xaiver Leung Portfolio</title>
+
+    <!--Same three viewport stylesheets as index.html-->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet"
+          media="only screen and (min-width: 481px) and (max-width: 1023px)"
+          href="tablet.css">
+    <link rel="stylesheet"
+          media="only screen and (max-width: 480px)"
+          href="mobile.css">
+</head>
+
+<!--body - content that users sees in the browser window-->
+<body>
+<!--the outer container that centres all content-->
+<div id="wrapper">
+    <!--Same header as index.html-->
+    <header id="banner">
+        <h1>Xaiver Leung</h1>
+        <nav class="main-nav">
+            <a href="index.html" class="button">Home</a>
+            <a href="about.html" class="button">About Me</a>
+            <a href="projects.html" class="button">Projects</a>
+            <a href="contact.html" class="button">Contact Me</a>
+        </nav>
+    </header>
+
+    <!--LEFT COLUMN — invitation text-->
+    <div id="left-column">
+        <h2>Contact Me</h2>
+        <p>Send me your questions, comments and project related queries!</p>
+    </div>
+
+    <!--wide main content area, float right in CSS -->
+    <div id="right-column">
+        <!--create a form-->
+        <!--sent the form to this eamil after the form is submited-->
+        <form action="mailto:pakyiu.leung@ontariotechu.net" 
+        method="post" 
+        enctype ="text/plain">
+            <!--Ask for name-->
+            <label for="name">Your Name</label>
+            <!--create textbox for answering-->
+            <input type="text" id="name" name="name" required minlength="2" placeholder="Jane Doe"><br>
+
+            <!--ask for phone num.-->
+            <label for="phone">Your Phone number.</label>
+            <!--create telephone num input box-->
+            <input type="tel" id="phone" name="phone" required
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                   placeholder="123-456-7890"><br>
+
+            <!--ask for what is needed-->
+            <label for="message">Message</label>
+            <!--create a multi-line text area-->
+            <textarea id="message" name="message" rows="6" required
+                      placeholder="Question, comment or query..."></textarea><br>
+
+            <!--quest. to comfirm not a robot-->
+            <label for="captcha">* What is 2+2? (So I know you aren't a robot)</label>
+            <!--crete a textbox to answer-->
+            <input type="text" id="captcha" name="captcha" required pattern="4" title="Answer must be 4"><br>
+
+            <!--sumbit button-->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!--Clear floats so the footer appears below both columns-->
+    <div class="clear"></div>
+
+    <!--footer-->
+    <footer id="footer">
+        <address>
+            <p>Email: <a href="mailto:pakyiu.leung@ontariotechu.net">pakyiu.leung@ontariotechu.net</a></p>
+        </address>
+        <p>&copy; 2026 Xaiver Leung. All rights reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
